@@ -1,0 +1,7 @@
+
+
+
+project file name - original file name (any changes) - license type - author - source
+
+bubble_pixelated.TTF - 04B_30__ - "FREEWARE!" - YUJI OSHIMOTO - https://www.dafont.com/04b-30.font
+PressStart2P-Regular.ttf - PressStart2P-Regular.ttf - SIL OFL - Cody Boisclair aka "CodeMan38" - https://fonts.google.com/specimen/Press+Start+2P#standard-styles

@@ -1,0 +1,146 @@
+
+
+CURRENT PROJECT OBSTACLES
+
+(done)
+- figure out how to draw some "frame" or surface (with a background) on the screen that will be the board itself
+- learn how to read the first 10 scores with file i/o and blit them to the scoreboard surface
+- basic high scores board (shows top 50 or all scores starting at rank 1 based on highest score descending, 10 ranks per page, etc)
+- arrow buttons for moving through 5 scoreboard screens
+- design game options screen in adobe xd: back button, apply button, game options title, game options(sound on/off, music on/off, theme (normal, grounds of consumption, classic, outer space (ie dune.. sand worm, sand and space bg, etc)), |GAME| border theme (bricks, solid stone, wood, energy walls), background (black, patterned black, space, nebula, grass, grass 2), snake skins (classic (blue, aqua, green, yellow, orange, red, purple, pink), striped (red/black, gold/black), july4, sand worm), grid on/off)
+- actually find/create the rest of the assets
+    - sound effects (button hover, button click prev/back, button click next, snake eats, points up, points up from candy, points down from bomb, snake crashes, game over, game pause, new high score!, unpause)
+    - music (calm music for menu/high scores/game options/pause menu/after game, game music)
+    - backgrounds (black, patterned black, space, nebula, dune, grass, grass 2)
+        - make the dune background with illustrator and/or photoshop
+    - actually make new small arrow buttons for menu options in photoshop or illustrator (modify stone assets to make new ones)
+- create basic game options screen
+    - make and place title, back button, and apply changes button
+    - make rest of basic code structure (event loop, blit, draw methods, etc)
+- figure out how to implement sfx and music into splash/menu/etc screens
+- figure out how game options will be set up and make game options actually work
+    - NOTES: (other places in the game's code read certain game settings from user_preferences.txt file ie bg when instance of main menu is created, border theme when game is started, etc...) ...(in game options screen, the available options are determined by reading ONLY game_options.txt (i.e. if any changes to game options is desired, it has to be done manually)) ...(if a setting is changed, user must press apply button to save new preferences, which will write the new preferences to user_preferences.txt) ...(if you want to change or add new option choices, you must manually enter them into the game_options.txt file)
+    - add (), /, or - between option name and actual option text of assets in both game_options and user_preferences txt files in order to separate and grab desired information when using file io (ex: BACKGROUND: GRASS/grass_background.png, ETC/etc)
+    - have a feature that shows which option is currently set
+    - figure out how to make options be clicked through with arrows
+    - adjust font and sizing of options so the right arrow doesnt go off the screen
+    - function or method for game options screen that refreshes/updates attributes based on new user preferences (this function or method is called when apply button is clicked in game options screen)
+    - make game options dynamic throughout the game and connected to user_preferences.txt (sfx, music, and background for now)
+- figure out how to make game wait a split second more when quiting in order to play the rest of the click button sfx of the quit button
+- move all redundant button classes into button module and simplify button classes (using an abstract/base class and concrete classes)
+- add convert or convert_alpha function into all pygame.image.load() calls
+- put file io functions into separate module
+- consider making constants module (look at past 2020 projects to see what they were called and how they were formatted)
+- add background and sfx settings update code (from the event loops) to the update_settings function (if possible)
+- Decide on features wanted for actual snake game (notebook list plus basic wireframe of screens before using adobe xd)
+- find out what snake asset is made from and what is needed (is it like all the other png assets that are blitted to the screen?)
+- get temporary snake asset and apple asset (modified snake asset for my needs)
+- start making mockups in adobe xd (pregame instruction screen, play time & high score reached screen, game paused screen, game over screen, end game high scores screen, and end game snake screen)... (nvm adobe xd causes extreme agony and blindness to the human eye... I'll just use the sketches in my notebook and maybe learn figma one day)
+- find out how border uis are made in snake or any game ig... (watch tutorial videos)
+- make snake game screen, snake game, game rules board, and pause menu classes
+- figure out how to make game_music loop play after game_music_intro finishes plays
+- make all the instruction board (game rules board) content
+- make stone ui border
+    - make background and borders fit on screen with correct size in all three classes
+    - figure out how to blit all ui info
+    - figure out how to have black boxes around ui text/number stuff
+    - reposition all ui info
+- design and get pause menu to work and to pop up when esc is pressed
+- get four pause menu options to actually work (continue game, sfx bool, music bool, quit to menu)
+    - be able to "scroll" through them with arrow keys
+    - make continue and esc go back to game
+    - figure out how to make the selected option be highlighted white
+    - make quit go back to main menu
+    - make arrow keys change sfx and music dynamically but locally (sfx and music bools change for pause menu when arrows are pressed and bools change for snake game class when you leave pause menu)
+- make actual high score show up
+- make game timer work and be dynamic (changes and pauses when time passes in game and when pause menu is pressed respectively)
+- figure out how to move stuff/collide and how the snake will be placed continuously (watch snake game tutorials)
+- figure out how to move snake around
+- learn how to use lamda functions (they are a useful only when you need a small function that is a one time use AND is being passed as an argument into another function, otherwise you would just use inline code)
+- figure out collision handling
+    - learn how to use pygame collision detection methods
+    - code collisions between snake head and border
+    - code collisions between snake head and body
+    - code collisions between snake head and apples
+- create apple snack class
+- get apple snack asset
+- fix all the game breaking bugs that have accumulated
+- figure out where to put clock.tick(60)/fps stuff (does it need to go in every event loop or is it just an initial line of code needed for the game?)
+- make apple assets properly aligned
+- figure out best snake fps, clock tick, etc (for movement speed in game)
+- prevent snake head from going outside of border (figure out how to make it look like the snake crashed into the border...)
+- add all snake game sfx (snake_crashes and snack_points_up for now)
+- make music stop when snake crashes
+- make game over event in snake game class which starts the game over class run method
+    - run method starts event loop with waiting a moment then the game over sfx (with animation?...)
+    - then after a moment, score shows up with "enter your name" text and text box with a 12 char limit (might have to use tkinter if there's no easy way to implement text boxes)
+    - the no thanks and continue buttons also show up
+    - make no thanks and continue buttons work (no thanks and enter your name label only show up if player got a score over 0)
+    - make a save new (score, name) pair function and get new high scores to dynamically show up on high scores board after
+    - figure out how to prevent input_name from being saved as a score after pressing continue when the score is 0
+    - figure out how to prevent input_name from being saved as a score after pressing continue if input name is empty
+    - figure out how to make a text box (TextBox class)
+        - make dark grey rectangle
+        - make rect selectable (if mouse clicked while hovered over rect, name_input_box.selected_bool = True and box is highlighted, else name_input_box.selected_bool = False)
+        - have conditional in key event handling that checks if name_input_box.selected_bool = True, then executes code related to key input tracking
+- make a PostGameScreen class
+    - make code that determines if scoreboard or snake game title will be blitted to screen
+    - create main menu and play again buttons
+    - figure out how to reset everything when play again is pressed
+    - figure out how to only blit the border and not all the ui stuff
+    - make a class with similar code to the HighScoresScreen class but only display the page of the user's score (consider swapping the method in HighScoresScreen class responsible for blitting scoreboard, with the similar ScoreBoard class being made for PostGameScreen class... if no, then put this feature in the icebox in features.txt)
+    - algorithm for finding the 10 scores to display on the post game scoreboard
+        - note: we only need to make one function; we just need to save the (score, name) pair from GameOverScreen if continue is selected and then find the "score page" that contains the last instance of the score with the specified/saved name (last instance b/c of how the program already operates - when a new score is entered that matches a previous score, the previous score is listed first when the high_scores txt file is being read/sorted through)
+            - get the sorted list of (score, name) pairs
+            - ORIGINAL ALGO...
+            - separate the (score, name) pair list into "score page" lists (..so we have a list of score page lists, that each contain a (score, name) pair tuple)
+            - find all the "score page" lists that contain the score that we are looking for and iterate backwards through the score page lists until we find the one that contains the last instance of the score along with the associated name, then take that list
+            - REVISED ALGO...
+            - make function that takes in list of all sorted scores and the user's new (score, name) tuple and return: the "page_list" of the 10 rows of (rank, score, name) that are on the same "page" as the entered user tuple as well as the index of the user's new (rank, score, name) tuple in the returned "page_list"
+                - to find the last instance of the input tuple, reverse the list
+                - find the index location of the user's (score, name) pair which is the same as the index location of the user's (rank, score, name) pair or "row"
+                - make and save a version of the input list with the rank added to each (score, name) pair and save the user's row by indexing with the previously saved index location
+                - make the page_of_user_row list by using a list comprehension and slicing the input list; the slicing [start:stop] can be found using the tens place of the previously saved user's row index, and the ones place will always be 0 and 9 because we are trying to get pages of 10
+    - blit the chosen "score page" list and "highlight" the user's row (put blue rectangle around row and make the text color of the (rank, score, name) items of the row black)
+- figure out how to make a game grid and how the snake and snacks will scale to the same size in order to fit in the grid
+- get rid of themes option in settings (will be done in future update.. put in features.txt)
+- fix bug that prevents updated high score from showing up if play again is pressed
+- find all sources and credit info for project assets (write info in each asset folder's asset_sources.txt file)
+- actually create the rest of the assets
+    - border themes (bricks, solid stone)... (before making anything, find out how borders are placed in pygame and maintained)
+        - make all border themes in photoshop or illustrator (make it fullscreen res/1080 or whatever and then just resize in game code)
+    - snake skins (classic (blue, aqua, green, yellow, orange, red, purple, pink), sand worm)
+        - figure out how to get eye part of original asset, so we can put them on the rest of the different colored snake head assets
+        - decide which blue will be considered classic or original (blue of the text in game and blue of the snake asset we borrowed)
+        - figure out color and what head of sand worm skin will look like
+- fix code to take into account selected border theme
+- figure out process to protect our digital art and/or how to get it copyrighted, etc... (maybe remove personal art stuff for first version of game...) ...(art and all code uploaded to github is automatically protected)
+- refactor/reorganize code for pep8
+    - convert all double quotes to single (check if single or double quote standard practice is universal... check pep8)
+    - find all os join functions and separate package and module name (to get rid of / ...the whole reason for using os join is to prevent / and \ issues when using different operating systems)
+    - make all lines < 120 columns
+    - define parameter data types and what a function/method should return with class/method/function type annotations ( def my_func(param_1: str, param2: int) -> str: )
+    - doc strings describing purpose of every module, method, class, and function
+        - (use """ """ notation for block comment under def line describing what function/method does (even if single line description))
+        - while documenting, analyze all code comments throughout program and determine if they need editing or should simply be removed (also decide if inline comments are necessary)
+    - get rid of magic numbers/variables (put them in constants in constants module)
+    - organize constants module (also add further description to module docstring)
+- finish making the readme file (maybe look up standard practice when it comes to readme files...)
+    - create outline on paper
+    - type out structure and text content in readme md
+        - add descriptions
+        - add purpose
+        - add features included section
+        - explain where to find asset source information in project and how it's all organized
+        - add screenshots/recordings
+            - create sample run "game demo" plan/outline
+            - look up how to create recordings and gifs for md
+            - record everything and make screenshots/gifs
+            - format it all into readme file
+        - explain scrum files and wip-loc
+- review git/github and figure out what needs to happen to properly upload project to github, etc
+
+(WIP)
+- _wip-loc_
+
+(backlog)

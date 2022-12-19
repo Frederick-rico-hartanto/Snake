@@ -1,0 +1,81 @@
+(all of the following sand worm pngs were created entirely by me, Proxima-L3)
+
+sand_worm_body_cube.png
+sand_worm_head_down.png
+sand_worm_head_left.png
+sand_worm_head_right.png
+sand_worm_head_up.png
+
+
+
+
+All of these other snake skin pngs are, for the most part, original; as in most of the assets were created by me, Proxima-L3,
+in adobe illustrator with only the eyes of the snake, from the original artist's assets, being used in most of the
+head_cube png assets below. (The color of the original asset was also used in the original_blue snake skin png assets).
+
+
+The "base files" used for the pngs below come from a CC0 creative commons licensed "snake graphics pack" made by the youtuber/artist, Clear_code
+
+https://opengameart.org/content/snake-game-assets
+original base file names - body_vertical.png/head_up.png
+
+
+
+
+
+All body_cube.png files were created using a simple colored square in adobe illustrator and all the head_down/head_left/head_right/head_up png files were created from the same square but with the eye assets from the original head_up.png file (extracted using adobe photoshop).
+
+original_blue_body_cube.png
+original_blue_head_down.png
+original_blue_head_left.png
+original_blue_head_right.png
+original_blue_head_up.png
+
+classic_aqua_body_cube.png
+classic_aqua_head_down.png
+classic_aqua_head_left.png
+classic_aqua_head_right.png
+classic_aqua_head_up.png
+classic_aqua_head_up.png
+
+classic_blue_body_cube.png
+classic_blue_head_down.png
+classic_blue_head_left.png
+classic_blue_head_right.png
+classic_blue_head_up.png
+
+classic_green_body_cube.png
+classic_green_head_down.png
+classic_green_head_left.png
+classic_green_head_right.png
+classic_green_head_up.png
+
+classic_orange_body_cube.png
+classic_orange_head_down.png
+classic_orange_head_left.png
+classic_orange_head_right.png
+classic_orange_head_up.png
+
+classic_pink_body_cube.png
+classic_pink_head_down.png
+classic_pink_head_left.png
+classic_pink_head_right.png
+classic_pink_head_up.png
+
+classic_purple_body_cube.png
+classic_purple_head_down.png
+classic_purple_head_left.png
+classic_purple_head_right.png
+classic_purple_head_up.png
+
+classic_red_body_cube.png
+classic_red_head_down.png
+classic_red_head_left.png
+classic_red_head_right.png
+classic_red_head_up.png
+
+classic_yellow_body_cube.png
+classic_yellow_head_down.png
+classic_yellow_head_left.png
+classic_yellow_head_right.png
+classic_yellow_head_up.png

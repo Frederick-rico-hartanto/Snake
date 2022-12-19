@@ -1,0 +1,7 @@
+
+
+
+project file name - original file name (any changes) - license type - author - source
+
+stone_border_left.png/stone_border_lower.png/stone_border_right.png/stone_border_upper.png - stoneTexture.png (used this simple square texture png to create a stone version of the four sides of the game ui border in illustrator) - "free to use" - Ian Eborn - https://thaumaturge-art.itch.io/assets-fantasy-ui
+brick_border_left.png/stone_border_lower.png/stone_border_right.png/stone_border_upper.png - bricksx64.png (used this simple square texture png to create a brick version of the four sides of the game ui border in illustrator) - CC-BY 3.0 - alpha_rats - https://opengameart.org/content/bricks-tiled-texture-64x64

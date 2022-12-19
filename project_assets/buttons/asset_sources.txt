@@ -1,0 +1,19 @@
+
+All of these assets come from a free to use downloadable asset pack (FantasyUI) made by the artist Ian Eborn
+
+https://thaumaturge-art.itch.io/assets-fantasy-ui
+
+
+
+
+project file name - original file name (any changes)
+
+ArrowButtonCutoutHoveredLeft.png/ArrowButtonCutoutHoveredRight.png - stoneButtonVerticalPressed.png (used this button as a template to make the right arrow button with a custom-made arrow clipping mask in adobe illustrator then just rotated to the right; the left arrow button is just the right arrow button mirrored in adobe photoshop)
+ArrowButtonCutoutPressedLeft.png/ArrowButtonCutoutPressedRight.png - stoneButtonVerticalDisabled.png (same process as ArrowButtonCutoutHovered pngs)
+ArrowButtonCutoutReadyLeft.png/ArrowButtonCutoutReadyRight.png - stoneButtonVerticalReady.png (same process as ArrowButtonCutoutHovered pngs)
+ArrowButtonHoveredLeft.png/ArrowButtonHoveredRight.png - ArrowButtonDownPressed.png (rotated this button to make the left arrow button; the right arrow button is just the resulting left arrow button mirrored in adobe photoshop)
+ArrowButtonPressedLeft.png/ArrowButtonPressedRight.png - ArrowButtonDownDisabled.png (same process as ArrowButtonHovered pngs)
+ArrowButtonReadyLeft.png/ArrowButtonReadyRight.png - ArrowButtonDownReady.png (same process as ArrowButtonHovered pngs)
+stoneButtonHovered.png - stoneButtonPressed.png
+stoneButtonPressed.png - stoneButtonDisabled.png
+stoneButtonReady.png - stoneButtonReady.png

@@ -1,0 +1,37 @@
+
+
+
+BLITTING GAME OPTION CONTENT TO GAME OPTION SCREEN
+
+Sample Run:
+- blit all game option labels and currently selected options to screen
+    - blit each line on screen (call a .draw() method from a GameOptionsContent class to create each row using a .draw() method GameOptionRow class space and call
+        - blit game option label
+        - blit left arrow
+        - blit currently selected option
+        - blit right arrow
+
+Algorithm:
+- class GameOptionsContent
+    - A
+
+
+    # ALGORITHM STUFF
+
+    # blits game option labels on screen
+    # def draw_game_options(self):
+    #
+    #     # 1. get game option key names from game options dictionary (attribute of game options screen) and save to a list
+    #     # 2. set font and color and x pos for all of the game option rows
+    #     # 3. iterate through new list blitting options labels to screen using same algo as draw_current_page() func
+
+    # def draw_selected_options(self):
+
+        # iterate through user preferences dictionary and assign each string value to a new local variable corresponding to each option key (maybe include key name in a tuple with option key) OR just make a local copy of user preferences dictionary
+        # for loop that iterates through key values of temp user preferences
+        #   if arrow condition is met then blit left arrow (depending on if list index of the currently selected option of current game option key being iterated through is >0 ...to find index use temp local variables  OR  just use local copy of user preferences dictionary)
+        #   blit currently selected option
+        #   if arrow condition is met then blit right arrow at a certain distance from midright of option text rect (depending on if list index of the currently selected option of current game option key being iterated through is <-1 )
+
+        # blit game options to screen
+        #   - blit each line of game option to screen

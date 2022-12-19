@@ -1,0 +1,7 @@
+
+
+
+project file name - original file name (any changes) - license type - author - source
+
+round_apple.png - apple.png - CC0 - Clear_code - https://opengameart.org/content/snake-game-assets
+pixelated_apple.png - apple.png - CC-BY 4.0/CC-BY 3.0/OGA-BY 3.0 - Dave Newton "devnewton" - https://opengameart.org/content/apple-3

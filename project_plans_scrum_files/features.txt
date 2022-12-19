@@ -1,0 +1,154 @@
+
+
+FEATURE IDEAS
+
+(under review)
+...simple easy refactoring didn't have time for...
+- use inline conditional to change what true/false strings to booleans for sfx/music bool variables
+- change the TextButton start_sfx='' parameter to a boolean and just use an inline conditional in the fstring in the button_click_sfx Sound object call (or if a start_sfx is desired only allow '_start_game' string as input)
+- change the ArrowButton direction parameter to only allow 'left' or 'right' to be the input for direction
+- maybe get rid of / in open statements of file io functions (separate each directory item with commas)
+- replace manually done object "area" collision code (checking if mouse or screen item is in or out of a certain x and y range) with pygame builtin collide methods
+- abstract main menu screen button press events (they're all quite similar... maybe put them in a method)
+
+...bugs/performance issues...
+- fix bug that causes game to crash when a certain number of snacks are eaten (crash lengths so far: 24, 38, 32, 33, 29, 35, 32, 33, 42, 36, ) ...no pattern as to what causes it to crash (things that seemed to help: making run loops 1/0 instead of True/False, maybe making the pygame.event.get call in the for loop statement itself instead of as a separate variable first, )
+- fix "libpng warning: iCCP: known incorrect sRGB profile" & "libpng warning: iCCP: cHRM chunk does not match sRGB" errors when using sand worm png in game... (try changing imported sand_worm png background to black or white... pygame may have a problem with pngs that have transparent backgrounds... the backgorund chosen when exporting from illustrator)
+- fix the snake crashing into itself bug (when going right then very very quickly pressing up then left arrows)
+- consider making snake movement smoother (either make square grid more compact or, more likely make snake move fewer pixels each frame.. maybe move 1 px each loop and have 30 frames per second, although that may result in the grid being pretty useless because the snake would move at a uniform rate)
+- consider putting a del statement after you are done with object/variable instances ...to save memory?
+- refactor code to make it run faster and smoother (look up tips on how to make pygame program run faster)
+-
+
+
+(ice box)
+...minor bugs/pep8/touch ups...
+- find out if moving all of the code from GameOptionsContent class to the GameOptionScreen class is viable (don't do if at the cost of readability)
+- figure out how to make is_hovering area of arrow button not square but triangular
+- determine if constants like GAME_TEXT_BLUE should be saved to an attribute in a class or just called throughout code, when needed
+- fix weird grid display bug (the grid is offset down and to the right most likely because it is only 1 px wide and is every 20px on the x and y... maybe instead, we should re-space all the lines and how far the snake moves each frame so 21 instead of 20 to allow room for the grid lines)
+- find out if class attributes like window, width, and height should just be inherited from an abstract or base class or if its better to keep them as arguments in all other screen classes (im pretty sure it's fine as is.. think tkinter widgets: they all require a window to be "blit" to)
+- consider making root window a base class or making an abstract class out of it
+- figure out how to make dune image edges less jagged
+
+...future features to implement...
+- make a SnakeBodyCube class to simplify code
+- actually create the rest of the assets
+    - border themes (wood, energy walls)
+    - snake skins (striped (red/black, gold/black), july4, sand worm) ...figure out how to implement striped skins in code
+- figure out how to actually put together different themes (have different "themes" available in settings (normal, grounds of consumption, classic snake(green letters/terminal look), atari, arcade, 8bit, holiday))
+- add different types of item classes (CandySnack, Shroom, Bomb)
+- figure out how to make text on screen blink (splash screen, rules board, game border ui, etc)
+- make code to activate new high score blinking green and sfx, remove high score, and reposition user score if user score is >= high score (insert code in the update_ui_info method of the GameBorderUi class)
+- make an items_on_screen_manager class to prevent potential bugs (like similar items being spawned on top of eachother) and to simplify code (items_on_screen_manager is called after snake player object is created. It will spawn and hold all the items on the screen depending on the mode.. at first, user enters how much they want of each item on the screen but eventually this will be automated depending on the current game mode selected)
+- figure out how to make screen fade out to black then fade in the next screen (splash to main menu, main menu to game, game to game over, post game to game or main menu, etc)
+- figure out how to disable apply changes button when all the game options and the user preferences match each other (put apply button in pressed mode and make it unpressable until a change is made to the game options)
+- go back and create a few versions of cutout arrow png (some with thicker borders, some with no border, and some with embossed and debossed look around the edges)
+- try coming up with a better snake death animation (maybe add a squeak noise if snake gets squashed against wall, or change color of snake head to red, or change the image to a broken snake head, or something else...)
+- figure out how to make full and minimized (with proper 1080p aspect ratio maintained) versions of game screen... (look at how it's typically done with real desktop games for inspiration)
+- figure out how to make screen be scrollable... maybe
+- implement an option to sort scores by other parameters (ie name, rank, reversed name, reversed rank, etc) ...use    from operator import itemgetter   and    score_name_list.sort(key=itemgetter(1))      to sort displayed scores by name instead of score
+- better game options (and later for non competitive... portals on/off, grid size snacks (# on screen at a time), bombs off/# (on screen at a time), candy on/off,
+- better high scores board (different boards for different difficulties, with player name 5 char, points, length, other stats like: length, apples, bombs, lives, )
+- implement difficulty game option/arcade mode (difficulty easy/regular/hard (easy - 4 snacks, bomb every 6th for 5sec, candy every 4th / normal - 3 snacks, bomb every 5th for 5sec, candy every 6th / hard - 3 snacks, bomb every 3rd for 8sec, candy every 6th))
+-
+
+
+
+
+
+
+TOOLS/CONCEPTS TO IMPLEMENT NOW
+
+(done)
+- oop
+- modules/packages
+- readme
+- Event loops
+- Repository
+- list comprehensions
+- I/O file writing/reading
+- dictionary comprehensions
+- inheritance
+- polymorphism (when different instances of different classes have the same method or attribute name and that method or attribute is therefore allowed to be called for each object instance in a single line)
+- abstract classes (designed to be inherited as a parent/superclass by a subclass and are not meant to be instantiated) and base classes (same as abstract classes but can be instantiated if need be)
+- concrete classes
+- positional and keyword arguments
+- magic variables & numbers (specifically avoiding them)
+- ternary/inline conditional statement
+- refactoring code
+- zip function
+- python debugger (import pdb ... pdb.set_trace() to place an "interactive print statement" to find out what certain variables are equal to at certain points)
+- map and filter functions
+- lambda expressions
+-
+
+(implement)
+- exe
+- itertools
+- exception handling (try/except)
+- learn how to use to-do feature in pycharm
+- recursion
+- pycharm debugger
+-
+
+
+
+
+CONCEPTS TO LEARN MORE ABOUT AND/OR HOW TO USE
+- themed tkinter w/oop
+- pyqt
+- * args ** kwargs
+- for else & while else statements (maybe not.. possibly bad practice)
+- meta classes
+- asynchronous programming (async IO)
+- decorators
+- generators
+- concurrency
+- parallelism
+- global interpreter lock
+- multiprocessing
+- multithreading
+- testing pipelines
+- cython (using c to interact with python for speed/efficiency reasons)
+- apis/rest apis
+- Closures
+- Promises
+- Unit testing
+- Recursive functions
+- Linked lists
+- Pointers
+- Queues
+- Stacks
+- Heaps
+- Trees
+- Graphs
+- Sentiment analysis
+- Data sets
+- Data Flow
+- Control Structures (sequence, conditional, iterative, etc)
+- Pseudocode (figure out what it typically looks like/standard practice/terminology - sample runs, algos, outline, etc)
+- Parsing/parsers
+- MVC pattern
+- Entity
+- Factory
+- Flyweight
+- AVL Trees
+- Red black Trees
+- Ci/Cd workflows
+- Execution modes
+- sys module
+- os module
+- Bitmap datatype
+- Bitfield datatype
+- Hash datatype
+- Set datatype
+- Sorted set datatype
+- Geospatial datatype
+- Hyperlog datatype
+- Stream datatype
+- UML diagrams
+- Context diagram
+- srs document
+- functional decomposition (of applications when trying to understand what parts need to be designed)
+-

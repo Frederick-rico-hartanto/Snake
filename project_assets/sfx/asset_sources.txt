@@ -1,0 +1,24 @@
+
+All of these sfx come from a CC0 creative commons licensed sfx asset pack (The Essential Retro Video Game Sound Effects Collection [512 sounds]) made by the artist Juhani Junkala aka SubspaceAudio.
+
+https://opengameart.org/content/512-sound-effects-8-bit-style
+
+
+
+
+project file name - original file name (any changes)
+
+bomb_points_down.wav - \Explosions\Odd\sfx_exp_odd6.wav
+button_apply_changes.wav - \General Sounds\Interactions\sfx_sounds_interaction17.wav
+button_click.wav - \General Sounds\Interactions\sfx_sounds_interaction21.wav
+button_click_right.wav - \General Sounds\Interactions\sfx_sounds_interaction22.wav
+button_click_left.wav - \General Sounds\Interactions\sfx_sounds_interaction22.wav (modified in adobe audition - reversed the audio file, then faded parts of it in and out and changed the db level to make the reversed audio sound smoother)
+button_click_start_game.wav - \General Sounds\Alarms\Alarms\sfx_alarm_loop3.wav
+button_hover.wav - \Movement\Climbing Ladder\sfx_movement_ladder1loop.wav (modified in adobe audition - slowed down the audio file, lowered pitch, and deleted the second sound)
+candy_points_up.wav - \General Sounds\Neutral Sounds\sfx_sound_neutral11.wav
+game_over.wav - \Explosions\Clusters\sfx_exp_cluster1.wav
+game_pause.wav - \General Sounds\Pause Sounds\sfx_sounds_pause1_in.wav
+game_unpause.wav - \General Sounds\Pause Sounds\sfx_sounds_pause1_out.wav
+new_high_score_notification.wav - \General Sounds\Fanfares\sfx_sounds_fanfare1.wav
+snack_points_up.wav - \General Sounds\Buttons\sfx_sounds_button6.wav
+snake_crashes.wav - \Weapons\Shotgun\sfx_weapon_shotgun3.wav

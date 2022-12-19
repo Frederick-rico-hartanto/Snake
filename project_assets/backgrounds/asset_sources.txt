@@ -1,0 +1,10 @@
+
+(both black_background.png and dune_at_night_background.png were created entirely by me, Proxima-L3)
+
+
+project file name - original file name (any changes) - license type - author - source
+
+grass_background.png - grass.png - CC0 - KonitaTutorials - https://opengameart.org/content/grass-for-scratch-background
+grass_background2.png - grass03.png - CC0 - athile - https://opengameart.org/content/seamless-grass-texture-ii
+pixel_space_background.png - Background_space.png - "free to use" - Bacteri - https://bacteri.itch.io/background-space
+space_vortex_background.png - vortex.png - CC-BY-SA 3.0/GPL 3.0/GPL 2.0 - darkrose - https://opengameart.org/content/vortex-background

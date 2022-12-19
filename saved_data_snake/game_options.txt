@@ -1,0 +1,6 @@
+SOUND: OFF~False, ON~True
+MUSIC: OFF~False, ON~True
+GRID: OFF~False, ON~True
+BORDER THEME: BRICKS~brick_border_, SOLID STONE~stone_border_
+BACKGROUND: BLACK~black_background.png, DUNE~dune_at_night_background.png, GRASS~grass_background.png, GRASS 2~grass_background2.png, PIXEL SPACE~pixel_space_background.png, SPACE VORTEX~space_vortex_background.png
+SNAKE SKIN: CLASSIC AQUA~classic_aqua_, CLASSIC BLUE~classic_blue_, CLASSIC GREEN~classic_green_, CLASSIC ORANGE~classic_orange_, CLASSIC PINK~classic_pink_, CLASSIC PURPLE~classic_purple_, CLASSIC RED~classic_red_, CLASSIC YELLOW~classic_yellow_, ORIGINAL BLUE~original_blue_, SAND WORM~sand_worm_

@@ -1,0 +1,8 @@
+
+
+
+project file name - original file name (any changes) - license type - author - source
+
+menu_music.wav - wackyidlings.wav - CC0 - Fupi - https://opengameart.org/content/wacky-idlings
+game_music.wav - wackywobblings.wav - CC0 - Fupi - https://opengameart.org/content/wacky-wobblings
+game_music_intro.wav - wackywobblingsintro.wav - CC0 - Fupi - https://opengameart.org/content/wacky-wobblings

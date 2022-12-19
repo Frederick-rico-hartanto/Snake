@@ -1,0 +1,6 @@
+SOUND: OFF~False
+MUSIC: OFF~False
+GRID: OFF~False
+BORDER THEME: SOLID STONE~stone_border_
+BACKGROUND: GRASS 2~grass_background2.png
+SNAKE SKIN: CLASSIC GREEN~classic_green_
