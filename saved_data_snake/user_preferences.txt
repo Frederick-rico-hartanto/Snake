@@ -2,5 +2,5 @@ SOUND: OFF~False
 MUSIC: OFF~False
 GRID: OFF~False
 BORDER THEME: SOLID STONE~stone_border_
-BACKGROUND: GRASS 2~grass_background2.png
-SNAKE SKIN: CLASSIC GREEN~classic_green_
+BACKGROUND: GOOGLE GRASS~google_grass_background.jpg
+SNAKE SKIN: GOOGLE SNAKE~google_snake_

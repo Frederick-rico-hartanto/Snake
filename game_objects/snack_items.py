@@ -70,7 +70,7 @@ class AppleSnack(Item):
         self.width = ITEM_APPLE_SNACK_WIDTH
         self.height = ITEM_APPLE_SNACK_HEIGHT
         self.apple_image = pygame.transform.scale(pygame.Surface.convert_alpha(pygame.image.load(
-            os.path.join('project_assets', 'items', 'pixelated_apple.png'))), (self.width, self.height))
+            os.path.join('project_assets', 'items', 'round_apple.png'))), (self.width, self.height))
         self.apple_rect = self.apple_image.get_rect(center=self.pos)
 
     def draw(self) -> None:
